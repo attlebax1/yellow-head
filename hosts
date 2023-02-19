@@ -1,14 +1,11 @@
-127.0.0.1	localhost
-127.0.1.1	Z270-HD3
+192.168.1.201 c1-cp1.local c1-cp1
+192.168.1.202 c1-cp2.local c1-cp2
+192.168.1.203 c1-node1.local c1-node1
+192.168.1.204 c1-node2.local c1-node2
+192.168.1.205 c1-node3.local c1-node3
+192.168.1.210 ansible.local ansible
 
-192.168.1.254 orion.local orion
 
-192.168.1.200 c1-cp1.local c1-cp1
-192.168.1.201 c1-cp2.local c1-cp2
-192.168.1.210 c1-node1.local c1-node1
-192.168.1.211 c1-node2.local c1-node2
-192.168.1.212 c1-node3.local c1-node3
-192.168.1.215 ansible.local ansible
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
