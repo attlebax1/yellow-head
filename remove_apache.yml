@@ -6,6 +6,7 @@
   - name: update repository index
     apt:
       update_cache: true
+    when: ansible_distribution == "Ubuntu"  
 
   - name: remove apache2 package
     apt:
