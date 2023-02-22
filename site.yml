@@ -17,7 +17,7 @@
       update_cache: true
     when: ansible_distribution == "Ubuntu"
 
-- hosts: worker_nodes control_nodes
+- hosts: worker_nodes
   become: true     
   tasks:
 
@@ -46,4 +46,6 @@
       dest: /var/www/html/index.html
       owner: root
       group: root
-      mode: 0644  
+      mode: 0644
+      
+        
