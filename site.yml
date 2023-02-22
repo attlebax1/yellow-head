@@ -17,7 +17,7 @@
       update_cache: true
     when: ansible_distribution == "Ubuntu"
 
-- hosts: worker_nodes
+- hosts: worker_nodes control_nodes
   become: true     
   tasks:
 
