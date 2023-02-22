@@ -11,3 +11,11 @@
       state: latest
       update_cache: true
     when: ansible_distribution == "Ubuntu"
+
+  - name: install apache and php packages for CentOS
+    dnf:
+      name:
+        - httpd
+        - php
+      state: latest
+      update_cache: true  
