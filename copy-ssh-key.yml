@@ -1,7 +1,7 @@
 # add-ssh-key
 
 ---
-  - hosts: c1-node4
+  - hosts: c1-node4.local
     become: true
     tasks:
       - name: Set authorized key for user ubuntu copying it from current user
