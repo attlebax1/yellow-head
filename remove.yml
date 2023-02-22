@@ -1,7 +1,7 @@
 ---
 - hosts: all
   become: true
-  tasks:
+  pre_tasks:
 
   - name: install updates (CentOS)
     dnf:
@@ -24,7 +24,7 @@
       name:
         - apache2
         - libapache2-mod-php
-      state: latest
+      state: absent
     when: ansible_distribution == "Ubuntu"
 
   - name: install apache and php packages for CentOS
@@ -32,5 +32,5 @@
       name:
         - httpd
         - php
-      state: latest
+      state: absent
     when: ansible_distribution == "CentOS"
