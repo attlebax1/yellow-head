@@ -5,6 +5,7 @@
 192.168.1.204 c1-node2.local c1-node2
 192.168.1.205 c1-node3.local c1-node3
 192.168.1.210 ansible.local ansible
+192.168.1.206 c1-node4.local c1-node4
 
 
 
