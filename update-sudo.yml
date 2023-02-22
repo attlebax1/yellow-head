@@ -1,0 +1,15 @@
+# update-sudo permissions
+---
+- hosts: all
+  become: true
+  tasks: 
+    - name: update sudoers
+      ansible.builtin.lineinfile:
+        path: /etc/sudoers
+        state: present
+        regexp: '^%sudo'
+        line: '%sudo ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'    
+
+# comand line to run playbook
+# ansible-playbook playbooks/update-sudo.yml -b -K
