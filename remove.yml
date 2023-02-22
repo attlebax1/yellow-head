@@ -19,7 +19,7 @@
   become: true     
   tasks:
   
-  - name: install apache2 and php support packages
+  - name: remove apache2 and php support packages
     apt:
       name:
         - apache2
@@ -27,7 +27,7 @@
       state: absent
     when: ansible_distribution == "Ubuntu"
 
-  - name: install apache and php packages for CentOS
+  - name: remove apache and php packages for CentOS
     dnf:
       name:
         - httpd
