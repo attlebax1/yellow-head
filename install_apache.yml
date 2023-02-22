@@ -19,3 +19,4 @@
         - php
       state: latest
       update_cache: true  
+    when: ansible_distribution == "CentOS"
