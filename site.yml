@@ -17,7 +17,8 @@
 
 - hosts: worker_nodes
   become: true     
-
+  tasks:
+  
   - name: install apache2 and php support packages
     apt:
       name:
