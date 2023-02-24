@@ -11,5 +11,5 @@
         line: '%sudo ALL=(ALL) NOPASSWD: ALL'
         validate: 'visudo -cf %s'    
 
-# comand line to run playbook
+# command line to run playbook
 # ansible-playbook playbooks/update-sudo.yml -b -K

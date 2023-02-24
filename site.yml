@@ -59,8 +59,8 @@
   - name: restart httpd service (CentOS)
     tags: apache,centos,httpd
     service: httpd
-    state: restarted
-  when: httpd.changed
+      state: restarted
+    when: httpd.changed
    
   - name: copy default html file for site
     tags: apache, apache2, httpd
