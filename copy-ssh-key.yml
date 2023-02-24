@@ -14,5 +14,5 @@
           msg: "{{ key }}"
 
 
-# comand line to run playbook
+# command line to run playbook
 # ansible-playbook playbooks/add-ssh-key.yml -b -K 
