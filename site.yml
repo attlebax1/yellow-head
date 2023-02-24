@@ -24,8 +24,8 @@
   - name: create ansible user
     tags: always
     user:
-     name: ansible
-     groups: root
+      name: ansible
+      groups: root
 
   - name: add ssh keys for ansible
     tags: always
@@ -41,8 +41,6 @@
       owner: root
       group: root
       mode: 0440
-
-
 
 - hosts: worker_nodes
   become: true     
