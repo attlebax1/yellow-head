@@ -48,7 +48,7 @@
        group: root
        mode: 0644
 
-- hosts: worker_nodes
+- hosts: workstations
   become: true
   tasks:
 
