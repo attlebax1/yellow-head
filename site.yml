@@ -21,11 +21,11 @@
   become: true
   tasks:
 
-  -name: create user
-   tags: always
-   user:
-    name: ansible
-    groups: root
+  - name: create user
+    tags: always
+    user:
+     name: ansible
+     groups: root
 
   - name: add ssh keys for ansible
     tags: always
@@ -35,7 +35,7 @@
 
   - name: add sudoers file for ansible
     copy:
-      src: su8doer_ansible
+      src: sudoer_ansible
       dest: /etc/sudoers.d/simone
       owner: root
       group: root
