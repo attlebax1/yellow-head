@@ -27,7 +27,7 @@
       name: simone
       groups: root
 
-  - name: add ssh keys for simone
+  - name: add ssh key for simone
     tags: always
     authorized_key:
       user: simone
