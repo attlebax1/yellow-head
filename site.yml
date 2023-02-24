@@ -44,6 +44,7 @@
     service: 
       name: httpd
       state: started
+      enabled: true
     when: ansible_distribution == "CentOS"  
       
   - name: copy default html file for site
