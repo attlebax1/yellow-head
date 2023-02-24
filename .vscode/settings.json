@@ -3,6 +3,7 @@
         "libapache",
         "lineinfile",
         "NOPASSWD",
-        "posix"
+        "posix",
+        "sudoer"
     ]
 }
