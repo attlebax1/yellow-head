@@ -47,7 +47,7 @@
       enabled: true
     when: ansible_distribution == "CentOS"  
 
-  - name change e-mail address for admin (CentOS)
+  - name: change e-mail address for admin (CentOS)
     tags: apache,centos,httpd
     lineinfile:
       path: /etc/httpd/conf/httpd.conf
