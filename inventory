@@ -17,3 +17,7 @@ c1-node3.local
 
 [centos]
 c1-node4.local
+
+[workstations]
+c1-node3.local
+
