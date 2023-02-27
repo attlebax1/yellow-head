@@ -6,7 +6,9 @@
 
   - name: create simone user
     tags: always
-    user:
+    ansible.builtin.user:
       name: simone
-      groups: sudo
+      uid: 1002
+      gid: 1002
+      group: sudo
 
