@@ -4,11 +4,11 @@
   become: true
   tasks:
 
-  - name: create simone user
-    tags: always
-    ansible.builtin.user:
-      name: simone
-      uid: 1002
-      gid: 1002
-      group: sudo
+#  - name: create simone user
+#    tags: always
+#    ansible.builtin.user:
+#      name: simone
+#      uid: 1002
+#      gid: 1002
+#      group: sudo
 
