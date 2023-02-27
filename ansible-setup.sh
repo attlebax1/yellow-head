@@ -1,5 +1,5 @@
 # Create key for ansible user on ansible node
-ssh-keygen -t id_ed25519 -521
+ssh-keygen -t ed25519 -521
 
 # Copy Id to other nodes
 # 192.168.1.201 c1-cp1.local c1-cp1
