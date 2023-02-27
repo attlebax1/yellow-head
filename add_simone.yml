@@ -1,3 +1,5 @@
+---
+
 - hosts: all
   become: true
   tasks:
@@ -13,6 +15,7 @@
     authorized_key:
       user: simone
       key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN8QGwHfse1WdGantsXzA9dxCmvC/yQHdTlFM++D3irC root@c1-ansible"
+  
   - name: add sudoers file for ansible
     tags: always
     copy:
