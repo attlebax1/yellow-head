@@ -1,6 +1,6 @@
 ---
 
-- hosts: control_nodes
+- hosts: c1-cp1.local
   become: true
   become_user: root
   tasks:
