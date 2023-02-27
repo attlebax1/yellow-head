@@ -1,0 +1,24 @@
+- hosts: all
+  become: true
+  tasks:
+
+  - name: create simone user
+    tags: always
+    user:
+      name: simone
+      groups: sudo
+
+  - name: add ssh key for simone
+    tags: always
+    authorized_key:
+      user: simone
+      key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7NNfbaqVQtf+zgUATW7pyAY8Y+E5GFzs020COHzZZUBYhfMtMeAsK/2PclijPQGgpu4SEuAXbbmTnDh93nvoDdbsP+izqg/2d9l/LpiZhzxevKGukHEMDpZ19B0KH9O4WcsxCSPJgDOCdDS8ro7oOAmucToBxNd3oQIGYptIAdan0q4wPE45vy+qMqSAbiPhIoMNVmEdUwP6xxoSOivSHp1OLDkuN9wGxyhQ4PwZBbL0R0yoS5vxDx23L08yqgTtdprXi04bt/xpYCbTq6bGxpLk24lOrlJxe4VSuXBwWbMjQe90UUH0jA6zL9m7rf60qvft6lq7zXT3H+wGXkpbhe6sPKjdo7Jsf/pIAk6Fsba43jDBBzaFyrF8xHOEiTNwG2LqKZG24ES82VYzRp4pxjNegWL1UNwmjuWukU+hpUorDxfyYgOtW+twO0DeU/REZU6hfW6HRFeBt0lLYzd8z9pYc9NdJn2Sj77Mh0DB0JpMYreVgQyj/ffB9uN8YVb8= root@c1-ansible"
+
+  - name: add sudoers file for ansible
+    tags: always
+    copy:
+      src: sudoer_simone
+      dest: /etc/sudoers.d/simone
+      owner: root
+      group: root
+      mode: 0440
