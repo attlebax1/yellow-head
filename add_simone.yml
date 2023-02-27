@@ -1,14 +1,15 @@
 ---
 
-- hosts: all
+- hosts: control_nodes
   become: true
+  become_user: root
   tasks:
 
-#  - name: create simone user
-#    tags: always
-#    ansible.builtin.user:
-#      name: simone
-#      uid: 1002
-#      gid: 1002
-#      group: sudo
+  - name: create simone user
+    tags: always
+    ansible.builtin.user:
+      name: simone
+      uid: 1002
+      gid: 1002
+      group: sudo
 
